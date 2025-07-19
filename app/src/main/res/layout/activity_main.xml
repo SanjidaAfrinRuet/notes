@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--  Search bar  -->
+    <EditText
+
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search note here...."
+        android:textColorHint="#716D6D"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="56dp"/>
+    <!--  Leave space for icon  -->
+    <!--  Dashboard icon  -->
+    <ImageView
+
+        android:id="@+id/btnDashboard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/etSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_dashboard"
+        android:contentDescription="Dashboard"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"/>
+    <!--  Notes list  -->
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/etSearch"
+        android:layout_above="@id/btnAddNote"
+        android:padding="8dp"/>
+    <!--  Add Note Button  -->
+    <Button
+
+        android:id="@+id/btnAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="27dp"
+        android:hint="Add another note "
+        android:textColorHint="#564F4F"/>
+</RelativeLayout>
