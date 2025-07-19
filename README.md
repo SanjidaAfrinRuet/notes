@@ -17,7 +17,7 @@ Features:
 - Date/time picker for setting reminders
 
 Installation Instructions:
-1. Download or clone the repository: https://github.com/SanjidaAfrinRuet/NotePad.git
+1. Download or clone the repository: https://github.com/SanjidaAfrinRuet/notes.git
 2. Open the project in Android Studio
 3. Allow Gradle to sync the project
 4. Connect a device or open an emulator
